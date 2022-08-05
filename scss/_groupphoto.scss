@@ -1,0 +1,102 @@
+.models-photo {
+  &__body {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    &_info {
+      flex: 1 1 62%;
+    }
+
+    &_title {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 130%;
+      letter-spacing: 0.8px;
+    }
+    &_text {
+      max-width: 925px;
+      width: 100%;
+    }
+
+    &_price {
+      position: relative;
+      flex: 1 1 30%;
+      text-align: right;
+    }
+
+    &_cost {
+      font-weight: 400;
+      font-size: 47.1781px;
+      line-height: 170%;
+      letter-spacing: 1.34795px;
+    }
+    &_cost::after {
+      content: url(../img/photoonmodels/rub.svg);
+    }
+  }
+}
+.value {
+  font-weight: bold;
+  font-size: 79px;
+}
+
+.cost {
+  &__info {
+    color: #b5b5b5;
+    margin: -16px 0px 0 74px;
+  }
+}
+.models-photo {
+  &__slider {
+    position: relative;
+  }
+}
+.slider {
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 47px;
+  }
+  &__item {
+    border-radius: 10px;
+    filter: drop-shadow(0px 5px 30px rgba(87, 105, 121, 0.15));
+  }
+}
+.reviews__btn {
+  font-size: 0;
+  color: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.reviews__btn::after {
+  content: "";
+  display: block;
+  width: 29px;
+  height: 29px;
+  opacity: 0.6;
+  border-left: 3px solid #47a7e3;
+  border-top: 3px solid #47a7e3;
+}
+.reviews__btn_prew {
+  left: -45px;
+  transform: rotate(-45deg);
+}
+
+.reviews__btn_next {
+  right: -45px;
+  transform: rotate(135deg);
+}
+.slider__item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.body1 {
+  margin-top: 20px;
+}
+.body2 {
+  margin-top: 80px;
+}

@@ -1,0 +1,58 @@
+.social {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  background: url(../img/social/social-back.svg) no-repeat;
+  background-size: 71% 62%;
+  background-position: -114% 77%;
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 161px;
+  }
+
+  &__picture img {
+    max-width: 539px;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  &__info {
+    &_picture img {
+      right: -340px;
+      position: relative;
+    }
+
+    &_text {
+      max-width: 397px;
+      width: 100%;
+      height: 52px;
+    }
+
+    &_links {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+  }
+}
+.telegramm img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: all 0.3s linear;
+}
+.instagramm img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: all 0.3s linear;
+}
+.telegramm :hover {
+  transform: translateY(-10px);
+}
+.instagramm :hover {
+  transform: translateY(-10px);
+}

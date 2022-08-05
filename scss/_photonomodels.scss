@@ -1,0 +1,93 @@
+.backgroundcontainer {
+  max-width: 1920px;
+  width: 100%;
+  min-height: 920px;
+  height: 100%;
+  margin: 0 auto;
+  background: url(../img/photoonmodels/background.svg) no-repeat center/cover;
+  background-position: 0 -15px;
+}
+.photo-on-models {
+  max-width: 1920px;
+  width: 100%;
+  min-height: 920px;
+  height: 100%;
+  margin: 0 auto;
+  background: linear-gradient(
+    to bottom,
+    rgba(172, 216, 239, 0.5),
+    rgba(245, 250, 255, 0)
+  );
+
+  &__body {
+    padding-top: 208px;
+    background: url(../img/photoonmodels/backgroundpicture.svg) no-repeat right;
+    background-size: 460px 473px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    letter-spacing: 0.015em;
+
+    color: #47a7e3;
+  }
+  &__list {
+    max-width: 586px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  &__list > li {
+    margin-top: 40px;
+  }
+  &__list > li:first-child {
+    margin-top: 24px;
+  }
+  &__list > li::before {
+    content: "";
+    width: 16px;
+    height: 12px;
+    background: url(../img/photoonmodels/item.svg) left no-repeat;
+    padding-right: 26px;
+  }
+
+  &__btn {
+    max-width: 366px;
+    width: 100%;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(180deg, #ffa96b -21.43%, #ee7a28 100%);
+    border-radius: 25px;
+    font-weight: 600;
+    line-height: 20px;
+    justify-content: center;
+    letter-spacing: 0.23em;
+    transition: all 0.2s linear;
+
+    color: #ffffff;
+  }
+  &__btn:hover {
+    color: #ee7a28;
+    background: #ffffff;
+    border: 3px solid #ee7a28;
+  }
+
+  &__price {
+    margin: 95px auto 0;
+    max-width: 178px;
+    width: 100%;
+    &_item {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 125%;
+      letter-spacing: 0.8px;
+      color: #306694;
+    }
+    &_photo {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

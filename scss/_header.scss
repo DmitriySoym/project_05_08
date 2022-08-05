@@ -1,0 +1,114 @@
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+}
+
+.header-fixed {
+  background: rgba(172, 216, 239, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translate3d(0, 0, 0);
+  height: 80px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+}
+.nav-toggle {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  z-index: 1;
+  background: url(../img/header/burgermenu.svg) no-repeat;
+  display: none;
+}
+.nav-toggle.active {
+  background: url(../img/header/burgermenuactive.svg) no-repeat;
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+.nav-mail {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 1;
+  background: url(../img/header/mail.svg) no-repeat;
+  display: none;
+}
+.header .active {
+  background-color: rgba(245, 250, 255, 0);
+}
+.nav-toggle_item {
+  display: block;
+  width: 100%;
+  height: 3px;
+  transition: all 0.2 linear;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.navbtn {
+  width: 182px;
+  height: 31px;
+  font-size: 12px;
+  line-height: 15px;
+  border: 2px solid #83bcdc;
+  border-radius: 10px;
+  color: #54afdd;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s linear;
+}
+.navbtn:hover {
+  background: #58b1de;
+  color: #ffffff;
+}
+
+.marketplace {
+  font-size: 14px;
+  line-height: 143%;
+  color: #585858;
+  transition: all 0.2s linear;
+}
+.active {
+  color: #f68738;
+}
+.marketplace:hover {
+  color: #f68738;
+}
+.navarrow {
+  position: relative;
+}
+.navarrow::after {
+  content: "";
+  background: url(../img/header/navarrow.svg) no-repeat right;
+  position: absolute;
+  top: 5px;
+  right: -18px;
+  display: block;
+  width: 12px;
+  height: 9px;
+}
