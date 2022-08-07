@@ -71,12 +71,12 @@
     margin: 0 auto;
   }
   .firstpicture img {
-    width: 424px;
-    height: 410px;
+    max-width: 424px;
+    max-height: 410px;
   }
   .secondpicture img {
-    width: 356px;
-    height: 375px;
+    max-width: 356px;
+    max-height: 375px;
   }
   .priceform__body {
     margin-top: 447px;
@@ -386,16 +386,16 @@
   /*---priceform---*/
   .firstpicture img,
   .secondpicture img {
-    width: 346px;
-    height: 335px;
+    max-width: 346px;
+    max-height: 335px;
   }
   .firstpicture {
     right: -27%;
-    bottom: 1416px;
+    bottom: 1212px;
   }
   .secondpicture {
     right: -26%;
-    bottom: 1751px;
+    bottom: 1547px;
   }
 
   .form__price {
@@ -450,9 +450,11 @@
   /*---priceform---*/
   .firstpicture {
     right: -16%;
+    bottom: 1339px;
   }
   .secondpicture {
     right: -16%;
+    bottom: 1671px;
   }
   /*--social--*/
 
@@ -466,12 +468,15 @@
 @media (max-width: 375px) {
   /*---priceform---*/
   .firstpicture {
-    right: -1%;
+    right: 4%;
+    bottom: 1390px;
   }
   .secondpicture {
     right: 3%;
+    bottom: 1771px;
   }
   .social__body {
-    padding-top: 12px;
+    right: 3%;
+    bottom: 1771px;
   }
 }

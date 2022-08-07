@@ -40,9 +40,6 @@
       width: 330px;
       margin-bottom: 24px;
     }
-
-    &_btn {
-    }
   }
 
   &__menu {
@@ -100,17 +97,12 @@
     margin-right: 27px;
     transition: all 0.3s linear;
   }
-  &__icon:hover {
-    transform: translateY(-10px);
-  }
+  //   &__icon:hover {
+  //     transform: translateY(-10px);
+  //   }
 
   &__bottom {
     background: #2f6192;
-    &_logo {
-    }
-
-    &_menu {
-    }
   }
   &_wrapper {
     width: 25%;
@@ -124,10 +116,7 @@
   position: relative;
   left: -60px;
 }
-.photo-on-models {
-  &__btn {
-  }
-}
+
 .body {
   &__item {
     flex: 1 1 25%;
@@ -138,9 +127,6 @@
       letter-spacing: 0.8px;
       color: #b5dfff;
       width: 100%;
-    }
-
-    &_text {
     }
 
     &_style {
