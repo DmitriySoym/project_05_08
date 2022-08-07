@@ -416,20 +416,27 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 147px;
   max-height: 931px;
   margin-bottom: 160px;
+  display: flex;
+}
+
+.formpicture_container {
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+  right: 250px;
+  z-index: -1;
 }
 
 .firstpicture {
-  position: relative;
-  z-index: -1;
-  bottom: 1000px;
-  right: -400px;
+  position: absolute;
+  top: 57px;
+  left: 0;
 }
 
 .secondpicture {
-  position: relative;
-  z-index: -1;
-  bottom: 1705px;
-  right: -673px;
+  position: absolute;
+  top: 145px;
+  left: 280px;
 }
 
 .form__price {
@@ -530,8 +537,16 @@ h1, h2, h3, h4, h5, h6 {
   height: 20px;
   margin-bottom: 14px;
   margin-right: 32px;
+  display: flex;
+  align-items: center;
 }
 
+.confidence {
+  justify-content: center;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+}
 .confidence__info {
   color: #5a84a9;
 }
@@ -898,15 +913,20 @@ input[type=checkbox] {
   }
   .priceform__body {
     margin-top: 447px;
+    flex-direction: column-reverse;
+  }
+  .formpicture_container {
+    bottom: 500px;
+    z-index: 2;
+    margin: 0 auto;
   }
   .firstpicture {
-    bottom: 1338px;
-    right: -33%;
+    top: 110px;
+    left: 37px;
   }
   .secondpicture {
-    z-index: 2;
-    bottom: 1695px;
-    right: -37%;
+    top: 145px;
+    left: 85px;
   }
   /*---socisl---*/
   .social__body {
@@ -1187,17 +1207,20 @@ input[type=checkbox] {
     max-height: 335px;
   }
   .firstpicture {
-    right: -27%;
-    bottom: 1212px;
+    top: 118px;
+    left: 83px;
   }
   .secondpicture {
-    right: -26%;
-    bottom: 1547px;
+    top: 118px;
+    left: 93px;
+  }
+  .formpicture_container {
+    bottom: 468px;
   }
   .form__price {
     height: 100%;
     padding: 40px 16px 47px 16px;
-    width: auto;
+    width: 100%;
   }
   .form__btn {
     margin-bottom: 12px;
@@ -1237,15 +1260,11 @@ input[type=checkbox] {
   .reviews__btn_next {
     right: -30px;
   }
+  /*-- model-sphoto4--*/
+  #market {
+    margin-bottom: 550px;
+  }
   /*---priceform---*/
-  .firstpicture {
-    right: -16%;
-    bottom: 1339px;
-  }
-  .secondpicture {
-    right: -16%;
-    bottom: 1671px;
-  }
   /*--social--*/
   .social__info_links {
     margin-top: 100px;
@@ -1256,16 +1275,11 @@ input[type=checkbox] {
 }
 @media (max-width: 375px) {
   /*---priceform---*/
-  .firstpicture {
-    right: 4%;
-    bottom: 1390px;
-  }
-  .secondpicture {
-    right: 3%;
-    bottom: 1771px;
-  }
   .social__body {
     right: 3%;
     bottom: 1771px;
+  }
+  .checkitem {
+    width: auto;
   }
 }

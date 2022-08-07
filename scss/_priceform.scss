@@ -8,19 +8,25 @@
     margin-top: 147px;
     max-height: 931px;
     margin-bottom: 160px;
+    display: flex;
   }
 }
-.firstpicture {
+.formpicture_container {
+  max-width: 100%;
+  height: 100%;
   position: relative;
+  right: 250px;
   z-index: -1;
-  bottom: 1000px;
-  right: -400px;
+}
+.firstpicture {
+  position: absolute;
+  top: 57px;
+  left: 0;
 }
 .secondpicture {
-  position: relative;
-  z-index: -1;
-  bottom: 1705px;
-  right: -673px;
+  position: absolute;
+  top: 145px;
+  left: 280px;
 }
 .form {
   &__price {
@@ -111,8 +117,6 @@
   padding-top: 12px;
 }
 
-.articles {
-}
 .checkboxes {
   display: flex;
   flex-wrap: wrap;
@@ -125,8 +129,14 @@
   height: 20px;
   margin-bottom: 14px;
   margin-right: 32px;
+  display: flex;
+  align-items: center;
 }
 .confidence {
+  justify-content: center;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
   &__info {
     color: #5a84a9;
   }
