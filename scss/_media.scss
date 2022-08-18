@@ -155,15 +155,22 @@
 
 @media (max-width: 1020px) {
   /*---photoonmodels---*/
+  .header_container {
+    padding: 0;
+  }
   .nav {
     display: none;
   }
   .nav.active {
+    position: absolute;
+    top: 0;
     display: flex;
     flex-direction: column;
+    max-width: 1020px;
     width: 100%;
     background-color: #fff;
-    height: 200px;
+    height: 220px;
+    padding: 10px 0;
     .marketplace {
       border-bottom: 1px solid #dbdbdb;
     }
@@ -233,6 +240,11 @@
     max-width: 230px;
     height: auto;
   }
+  /*  priceform    */
+  .priceform__body {
+    margin-bottom: 75px;
+  }
+
   /*---socisl---*/
   .social__picture {
     display: none;
@@ -276,6 +288,7 @@
       }
       &_btn {
         max-width: 254px;
+        width: 100%;
         height: 54px;
         font-size: 14px;
         line-height: 17px;
@@ -440,6 +453,10 @@
     flex: 1 1 50%;
     margin-top: 8px;
   }
+  /*----footer---*/
+  .footer__form {
+    padding: 0 20px 20px 20px;
+  }
 }
 @media (max-width: 575px) {
   /*----groupphoto-----*/
@@ -460,7 +477,9 @@
     margin-bottom: 550px;
   }
   /*---priceform---*/
-
+  .priceform__body {
+    margin-top: 510px;
+  }
   /*--social--*/
 
   .social__info_links {
@@ -469,17 +488,14 @@
   .social__body {
     margin-bottom: 80px;
   }
+  /*----footer---*/
 }
 @media (max-width: 375px) {
   /*---priceform---*/
-  //   .firstpicture {
-  //     right: 4%;
-  //     bottom: 1390px;
-  //   }
-  //   .secondpicture {
-  //     right: 3%;
-  //     bottom: 1771px;
-  //   }
+  .priceform__body {
+    margin-top: 550px;
+  }
+  /*---social---*/
   .social__body {
     right: 3%;
     bottom: 1771px;

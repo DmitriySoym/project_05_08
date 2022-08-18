@@ -1,5 +1,5 @@
 $(function () {
-  var header = $("#header"),
+  let header = $("#header"),
     modelsH = $("#models").innerHeight(),
     scrolloffsets = $(window).scrollTop();
 
@@ -24,7 +24,7 @@ $(function () {
   $("[data-scroll]").on("click", function (event) {
     event.preventDefault();
 
-    var $this = $(this),
+    let $this = $(this),
       blockId = $this.data("scroll"),
       blockOffsets = $(blockId).offset().top;
     $("#nav a").removeClass("active");
@@ -46,12 +46,6 @@ $(function () {
     $(this).toggleClass("active");
     $("#nav").toggleClass("active");
   });
-
-  /* Slider */
-  $("[data-slider]").slick({
-    infinite: true,
-    fade: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-  });
 });
+
+/*  slider    */

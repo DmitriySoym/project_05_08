@@ -91,3 +91,18 @@
     }
   }
 }
+
+.slider__items {
+  min-height: 0;
+}
+.reviews__btn.reviews__btn_next,
+.reviews__btn.reviews__btn_prew {
+  display: block;
+  top: 50%;
+}
+.reviews__btn.reviews__btn_prew {
+  left: -45px;
+}
+.reviews__btn.reviews__btn_next {
+  right: -45px;
+}
