@@ -47,5 +47,3 @@ $(function () {
     $("#nav").toggleClass("active");
   });
 });
-
-/*  slider    */

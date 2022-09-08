@@ -304,22 +304,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
-.slider__items {
-  min-height: 0;
-}
-
-.reviews__btn.reviews__btn_next,
-.reviews__btn.reviews__btn_prew {
-  display: block;
-  top: 50%;
-}
-
-.reviews__btn.reviews__btn_prew {
-  left: -45px;
-}
-
-.reviews__btn.reviews__btn_next {
-  right: -45px;
+.reviews__btn {
+  cursor: pointer;
 }
 
 /*---Groupphoto----*/
@@ -1325,5 +1311,12 @@ input[type=checkbox] {
   }
   .checkitem {
     width: auto;
+  }
+  /*----footer---*/
+  .footer__form {
+    height: 500px;
+  }
+  .footer__form_btn {
+    text-align: center;
   }
 }

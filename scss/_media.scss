@@ -503,4 +503,11 @@
   .checkitem {
     width: auto;
   }
+  /*----footer---*/
+  .footer__form {
+    height: 500px;
+    &_btn {
+      text-align: center;
+    }
+  }
 }
